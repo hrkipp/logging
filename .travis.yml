@@ -6,6 +6,6 @@ go:
   - 1.8
 
 install:
-  - go get -v -t ./...
+  - go get gopkg.in/check.v1
 
 script: go test
