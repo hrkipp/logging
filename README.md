@@ -1,4 +1,4 @@
-### Context Based Logging
+# Context Based Logging
 This is a simple context based logger for go.
 [![Build Status](https://travis-ci.org/hrkipp/logging.svg)](https://travis-ci.org/hrkipp/logging)
 
@@ -37,10 +37,10 @@ You can also define custom formatting to the output strings. Simply define a Bui
 ```
 builder := func(ctx context.Context, level logging.Level, args ...interface{}) []byte {
     return []byte(fmt.Sprintf("custom %s %v", level.String(), args))
+}
 ctx := logging.WithBuilder(s.ctx, builder)
 // prints out "custom INFO [foo]"
 logging.Info(ctx, "foo")
-}
 ```
 
 ## License
