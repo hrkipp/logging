@@ -1,6 +1,6 @@
 # Context Based Logging
-This is a simple context based logger for go.
 [![Build Status](https://travis-ci.org/hrkipp/logging.svg)](https://travis-ci.org/hrkipp/logging)
+This is a simple context based logger for go.
 
 ## Usage
 
