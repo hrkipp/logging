@@ -38,7 +38,7 @@ You can also define custom formatting to the output strings. Simply define a Bui
 builder := func(ctx context.Context, level logging.Level, args ...interface{}) []byte {
     return []byte(fmt.Sprintf("custom %s %v", level.String(), args))
 }
-ctx := logging.WithBuilder(s.ctx, builder)
+ctx := logging.WithBuilder(context.Background(), builder)
 // prints out "custom INFO [foo]"
 logging.Info(ctx, "foo")
 ```
