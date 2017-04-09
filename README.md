@@ -30,7 +30,7 @@ ctx := logging.WithLevel(context.Background(), logging.WARNING)
 // this wont print anything
 logger.Info(ctx, "foo")
 // but this will
-logger.WARNING(ctx, "foo")
+logger.Warning(ctx, "foo")
 ```
 
 You can also define custom formatting to the output strings. Simply define a Builder function and add it to the context.
